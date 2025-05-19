@@ -118,34 +118,37 @@ html, body {
 
 .section-bottom__controls {
   display: flex;
+}
+
+.control {
+  flex: 1;
   padding: 0.4rem;
-  background-color: green;
+  border: none;
+  background-color: #ffffff;
+
+}
+
+.control:hover {
+  cursor: pointer;
+  background-color:   #f0f0f0;
 }
 
 .controls__temperature {
-  flex: 1;
-  padding: 0.2rem;
-  border: none;
-  border-bottom: 1px solid yellow;
-  background-color: #ffffff;
-}
-.control__rain {
-  flex: 1;
-  padding: 0.2rem;
-  border: none;
-  border-bottom: 1px solid yellow;
-  background-color: #ffffff;
-}
-.control__wind {
-  flex: 1;
-  padding: 0.2rem;
-  border: none;
-  border-bottom: 1px solid yellow;
-  background-color: #ffffff;
+  border-bottom: 1px solid #F59E0B;
 }
 
+.control__rain {
+}
+
+.control__wind {
+}
+
+
 .seciion-bottom__canvas {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .outergrid__footer {
