@@ -16,31 +16,39 @@
             <select class="select"></select>
           </div>
           <div class="card__body">
-            <div class="card__body__section section-top">
-              <div class="left-section">
-                <img class="icon" />
-                <span class="temperature-text">temprature</span>
+            <div class="card__body__spinner">
+              <div class="spinner"></div>
+            </div>
+            <div class="card__body__data">
+              <div class="card__body__section section-top">
+                <div class="left-section">
+                  <img class="icon" />
+                  <span class="temperature-text">temprature</span>
+                </div>
+                <div class="right-section">
+                  <span class="city-name">city name</span>
+                  <span class="date">date</span>
+                  <span class="weather-description">weather desc</span>
+                </div>
               </div>
-              <div class="right-section">
-                <span class="city-name">city name</span>
-                <span class="date">date</span>
-                <span class="weather-description">weather desc</span>
+              <div class="card__body__section section-middle">
+                <p class="humidity">Humedad:</p>
+                <p class="wind">Viento: a</p>
+              </div>
+              <div class="card__body__section section-bottom">
+                <div class="section-bottom__controls">
+                  <button class="controls__temperature control">
+                    Temperatura
+                  </button>
+                  <button class="control__rain control">Precipitaciones</button>
+                  <button class="control__wind control">Viento</button>
+                </div>
+                <div class="seciion-bottom__canvas">
+                  <p>Datos de temperatura por hora</p>
+                </div>
               </div>
             </div>
-            <div class="card__body__section section-middle">
-              <p class="humidity">Humedad:</p>
-              <p class="wind">Viento: a</p>
-            </div>
-            <div class="card__body__section section-bottom">
-              <div class="section-bottom__controls">
-                <button class="controls__temperature control">Temperatura</button>
-                <button class="control__rain control">Precipitaciones</button>
-                <button class="control__wind control">Viento</button>
-              </div>
-              <div class="seciion-bottom__canvas">
-                <p>Datos de temperatura por hora</p>
-              </div>
-            </div>
+            <div class="result" id="resultBox"></div>
           </div>
         </div>
       </div>
@@ -49,10 +57,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- <button onclick="fetchData()">get the weather</button> -->
-<!-- <span class="card__info"></span>
-          <img
-            src="https://openweathermap.org/img/wn/04d@2x.png"
-            alt="Clear Sky"
-          /> -->

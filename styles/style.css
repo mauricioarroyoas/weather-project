@@ -32,7 +32,7 @@ body {
 }
 
 .card {
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -56,6 +56,51 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+}
+
+.card__body__spinner {
+  display: none;
+}
+
+.card__body__spinner-shown {
+  display: flex;
+}
+
+.card__body__spinner-hidden {
+  display: none;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ccc;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: block;
+  margin: 20px auto;
+}
+
+.spinner-hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.card__body__data {
+  display: none;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.card__body__data-shown {
+  display: flex;
 }
 
 .section-top {
@@ -91,12 +136,12 @@ body {
 
 .date {
   font-size: 0.9rem;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .weather-description {
   font-size: 0.9rem;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .section-middle {
@@ -106,11 +151,11 @@ body {
 }
 
 .humidity {
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .wind {
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .item1 {
