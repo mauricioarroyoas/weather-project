@@ -6,7 +6,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -16,6 +17,7 @@ html, body {
   grid-template-rows: 10% 1fr 10%;
   grid-template-columns: 1fr;
   grid-template-areas: "alias-header" "alias-content" "alias-footer";
+  background-color: #f9fafb;
 }
 
 .outergrid__header {
@@ -33,7 +35,6 @@ html, body {
   width: 35%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
@@ -41,6 +42,7 @@ html, body {
 
 .card__header {
   display: flex;
+  padding: 1rem;
 }
 
 .select {
@@ -58,6 +60,7 @@ html, body {
 
 .section-top {
   display: flex;
+  padding: 1rem;
 }
 
 .left-section {
@@ -71,6 +74,10 @@ html, body {
   height: 50px;
 }
 
+.temperature-text {
+  font-size: 2rem;
+}
+
 .right-section {
   flex-basis: 50%;
   display: flex;
@@ -78,9 +85,32 @@ html, body {
   align-items: end;
 }
 
+.city-name {
+  font-size: 1.2rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #6B7280;
+}
+
+.weather-description {
+  font-size: 0.9rem;
+  color: #6B7280;
+}
+
 .section-middle {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+}
+
+.humidity {
+  color: #6B7280;
+}
+
+.wind {
+  color: #6B7280;
 }
 
 .item1 {
@@ -106,7 +136,7 @@ html, body {
 
 .control {
   flex: 1;
-  padding: 0.4rem;
+  padding: 0.6rem;
   border: none;
   background-color: #ffffff;
 }
@@ -117,14 +147,14 @@ html, body {
 }
 
 .controls__temperature {
-  border-bottom: 1px solid #F59E0B;
+  border-bottom: 1px solid #f59e0b;
 }
 
 .seciion-bottom__canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .outergrid__footer {
