@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: lightblue;
+}
+
+.outergrid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-columns: 1fr;
+  grid-template-areas: "alias-header" "alias-content" "alias-footer";
+}
+
+.outergrid__header {
+  grid-area: alias-header;
+}
+
+.outergrid__content {
+  grid-area: alias-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.card__header {
+  display: flex;
+  background-color: red;
+  padding: 0.2rem;
+}
+
+.select {
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #ffffff;
+  border: 1px solid #f9fafb;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.section-top {
+  display: flex;
+}
+
+.left-section {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.right-section {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.section-middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.item1 {
+  grid-area: alias-item1;
+}
+
+.item2 {
+  grid-area: alias-item2;
+}
+
+.item3 {
+  grid-area: alias-item3;
+}
+
+.section-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-bottom__controls {
+  display: flex;
+}
+
+.outergrid__footer {
+  grid-area: alias-footer;
+}
+
+/*# sourceMappingURL=style.css.map */
