@@ -62,11 +62,11 @@ const CITIES = [
 ];
 const UNITS = "metric";
 const API_KEY = "101577224ac8d22081f12ebb7a0e3d7a";
+const LANGUAGE = "es";
 let weatherData = null;
 
-//weather service
 async function getWeather(latitude, longitude) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${UNITS}&appid=${API_KEY}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${UNITS}&appid=${API_KEY}&lang=${LANGUAGE}`;
   const response = await fetch(url);
   const data = await response.json();
   return data;
