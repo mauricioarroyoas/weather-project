@@ -8,7 +8,6 @@
 
 html, body {
   height: 100%;
-  background-color: lightblue;
 }
 
 .outergrid {
@@ -38,22 +37,20 @@ html, body {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
-
 }
 
 .card__header {
   display: flex;
-  background-color: red;
-  padding: 0.2rem;
 }
 
 .select {
   width: 100%;
   padding: 0.4rem;
   background-color: #ffffff;
-  border: 1px solid #f9fafb;
+  border: 3px solid #f9fafb;
 }
 
 .card__body {
@@ -121,8 +118,35 @@ html, body {
 
 .section-bottom__controls {
   display: flex;
+  padding: 0.4rem;
+  background-color: green;
 }
 
+.controls__temperature {
+  flex: 1;
+  padding: 0.2rem;
+  border: none;
+  border-bottom: 1px solid yellow;
+  background-color: #ffffff;
+}
+.control__rain {
+  flex: 1;
+  padding: 0.2rem;
+  border: none;
+  border-bottom: 1px solid yellow;
+  background-color: #ffffff;
+}
+.control__wind {
+  flex: 1;
+  padding: 0.2rem;
+  border: none;
+  border-bottom: 1px solid yellow;
+  background-color: #ffffff;
+}
+
+.seciion-bottom__canvas {
+  background-color: red;
+}
 
 .outergrid__footer {
   grid-area: alias-footer;
